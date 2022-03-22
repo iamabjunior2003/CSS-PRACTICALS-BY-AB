@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Form Validation: Empty form fields  </title>
+  <style>body{font-family:Verdana;}</style>
+</head>
+  
+<body>
+<script>
+  function check(myform){
+ if (myform.myname.value == "" || myform.myname.value == null)
+ {
+   alert("Name is mandatory");
+   return false;
+ }
+    if(myform.myphone.value == "" || myform.myphone.value == null)
+    {
+      alert("Phone number is mandatory");
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+</script>
+  <form name="formvalidate" action="formprocess.php" 
+        method="get" onSubmit="return check(formvalidate)">
+          
+ <p> Name : 
+   <input type="text" size="50" name="myname" /> </p>
+          
+ <p> Phone No : 
+   <input type="text" size="50" name="myphone" /> </p>
+    
+  <p> 
+   <input type="submit" value="Submit" />
+   <input type="reset"  value="Clear" />
+ </p>
+  </form>         
+          
+     
+     </body>
+</html>

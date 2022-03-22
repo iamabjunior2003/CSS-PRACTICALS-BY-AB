@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+<script>
+	var str1="Wellcome in the ";
+	var str2 ="Javascript";
+	var variable;
+
+	variable = str1+str2;
+	document.write("Joining string : "+variable);
+	document.write("<br>");
+
+	variable = str1.charAt(0);
+	document.write("Character at cartain position : "+variable);
+	document.write("<br>");
+
+	variable = str1.indexOf("W");
+	document.write("Index of cartain character :  "+variable);
+	document.write("<br>");
+	
+	variable = str1.substring(0,4);
+	document.write("Sub-String of a string : "+variable);
+	document.write("<br>");
+
+	var str3 = "1234";
+	variable = parseInt(str3);
+	document.write("Parse String to integer number : "+variable+ " and Type of  variable is : "+typeof(variable));
+	document.write("<br>");
+		
+	var str4 =1234;
+	variable = str4.toString();
+	document.write("Parse integer to string :"+variable +" and Type of variable is : "+typeof(variable));
+	document.write("<br>");
+
+	variable = str1.split(" ");
+	document.write("Dividing a string : "+variable);
+	document.write("<br>");
+
+	variable = str1.charCodeAt(0);
+	document.write("Character at cartain position : "+variable);
+	document.write("<br>");
+
+	variable = String.fromCharCode(60,61,62);
+	document.write("From char code : "+variable);
+	
+</script>
+</body>
+</html>

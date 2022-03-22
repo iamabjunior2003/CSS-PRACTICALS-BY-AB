@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script>
+			function confriminput()
+			{
+				fname=document.forms[0].fname.value;
+				alert ("Hello"+fname+"!you will now be redirected to my page");
+				
+			}
+		</script>
+	</head>
+	<body>
+		<form onsumit="confirminput()"action="http://google.com/">
+		Enter your name:<input id="fname"type="text" size="20">
+		<input type="submit">
+	</form>
+	</body>
+</html>

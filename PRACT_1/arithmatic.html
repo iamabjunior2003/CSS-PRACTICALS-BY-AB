@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title> Arithmatic operation</title>
+</head>
+<body>
+<form name="myform" >
+	<input type="text" name="fnum"><br><br>
+	<input type="text" name="snum"><br><br>
+
+	<input type="button" name="" value="ADD" onclick="add()">
+	<input type="button" name="" value="sub" onclick="sub()">
+	<input type="button" name="" value="mul" onclick="mul()">
+	<input type="button" name="" value="div" onclick="div()">
+	<input type="text" name="result" >
+	
+</form>
+<script>
+function add()
+{
+	fnum=parseInt(myform.fnum.value) ;
+	snum=parseInt(myform.snum.value);
+	result=fnum+snum;
+	myform.result.value=result;                                                                                                                                                                                                                       
+}
+function sub()
+{
+	fnum=parseInt(myform.fnum.value) ;
+	snum=parseInt(myform.snum.value);
+	result=fnum-snum;
+	myform.result.value=result;                                                                                                                                                                                                                       
+}
+function mul()
+{
+	fnum=parseInt(myform.fnum.value) ;
+	snum=parseInt(myform.snum.value);
+	result=fnum*snum;
+	myform.result.value=result;                                                                                                                                                                                                                       
+}
+function div()
+{
+	fnum=parseInt(myform.fnum.value) ;
+	snum=parseInt(myform.snum.value);
+	result=fnum/snum;
+	myform.result.value=result;                                                                                                                                                                                                                       
+}
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>javascript status bar-scrollText</title>
+<script language="javascript">
+msg="this is an example of scrolling message";
+spacer="------------ -------------";
+pos=0;
+function scrollMessage()
+{
+	window.status=msg.substring (pos,msg.length)+spacer+msg.substring(0,pos);
+	pos++;
+	if(pos>msg.length)
+	pos=0;
+	window.setTimeout("scrollMessage()",100);
+}
+scrollMessage();
+</script>
+</head>
+<body>
+<p>Scrolling message Example</p>
+<p>Look at the status line at the bottom of the page</p>
+</body>
+</html>

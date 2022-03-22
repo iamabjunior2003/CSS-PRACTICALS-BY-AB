@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+<script language="Javascript">
+
+MyBanners=new Array('1.jpg','2.jpg','3.jpg','4.jpg')
+
+MyBannerLinks=new Array('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F725220346239362551%2F&psig=AOvVaw1VQzZRF_wGSSsufyMnWjUe&ust=1639723385193000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNDT8-Pb5_QCFQAAAAAdAAAAABAZ','http://www.excelvbatutor.com/','https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9039511.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Firon-man-4k-iphone-12-wallpapers&tbnid=2KsHsla6q_IjUM&vet=12ahUKEwj6yMDg2-f0AhWA_TgGHVkjBmAQMygEegUIARDOAQ..i&docid=LPuG7EdAluF6tM&w=900&h=1600&itg=1&q=iron%20man%20wallpaper&ved=2ahUKEwj6yMDg2-f0AhWA_TgGHVkjBmAQMygEegUIARDOAQ','http://javascript-tutor.net/')
+
+banner=0
+
+function ShowLinks(){
+
+document.location.href="http://www."+MyBannerLinks[banner]
+
+}function ShowBanners()
+
+{ 
+if (document.images)
+
+{ 
+banner++
+
+if (banner==MyBanners.length) {
+
+banner=0
+
+}
+
+document.ChangeBanner.src=MyBanners[banner]
+
+setTimeout("ShowBanners()",3000)
+
+}
+
+}
+
+</script>
+
+<body onload="ShowBanners()">
+
+<center>
+
+<a href="javascript: ShowLinks()">
+
+<img src="banner1.jpg" width="500" height="800" name="ChangeBanner"/></a>
+
+</center>
+
+</body>
+
+</html>
